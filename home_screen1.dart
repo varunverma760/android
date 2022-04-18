@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 // import 'package:flutter/rendering.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -9,11 +10,15 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
+
+
+
 class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context){
     var size = MediaQuery.of(context).size;
+
     return Scaffold(
 
         body: CupertinoScrollbar(
@@ -23,7 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
           child: Stack(
 
+
+
             children: <Widget>[
+
               Container(
 
 
@@ -42,13 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
                        radius: 32,
                        backgroundColor: Colors.white,
                      ),
-                         SizedBox(
-                           width: 16,
-                         ),
                          Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           crossAxisAlignment: CrossAxisAlignment.end,
-                             children: <Widget>[
+                           children: <Widget>[
+
 
 
                              ]
@@ -88,6 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
 
+
+
                               ],
                             ),
                           ],
@@ -95,7 +101,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       ),
 
+
+
+
+
+
                       Column( children:<Widget>[
+
+                        Container(child:Align(alignment: Alignment.topRight,
+                              child:Text("Settings",style: TextStyle(fontSize: 18,color: Colors.white,),
+                              ),),
+                          ),
                         Text('Wealthee Monk',style: TextStyle(
                             fontSize: 35,
                             color: Colors.white
@@ -107,7 +123,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text('Welcome User',style: TextStyle(
                             fontSize: 18,
                             color: Colors.white
-                        ),)
+                        ),),
+
+
                       ]
                       ),
                       Expanded(
@@ -208,42 +226,74 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child:Text("   Tailored Portfolio",style: TextStyle(fontSize: 18,color: Colors.black,fontWeight: FontWeight.bold),
                                     ),),
                                 ),),
-                            SizedBox(
-                              width: 445,
-                              height: 162,
-                              child: Card(
-                                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12)),
-                                elevation: 12,
-                                child:Align(alignment: Alignment.bottomCenter,
-                                  child:Text("   Tailored Portfolio",style: TextStyle(fontSize: 18,color: Colors.black,fontWeight: FontWeight.bold),
-                                  ),),
-                              ),
 
 
 
 
+                          ],
 
+                          
 
-
-
-
-
-
-
-
-
-
-
-    ),
-    ]
                         ),
-    ),]
-    ),),
+
+
+
+
+                      ),
+                    ],
+
+
+
+
+
+
+
+
+
+
+                  ),),
     ),],
-    ),)
-    );
+    ),),
+
+
+       bottomNavigationBar:
+
+
+       BottomNavigationBar(
+
+
+
+          items: const <BottomNavigationBarItem>[
+
+           BottomNavigationBarItem(
+
+             icon: Icon(Icons.ac_unit,
+             color: Colors.white30
+           ),
+            label: '',
+
+
+           ),
+           BottomNavigationBarItem(
+            // icon: Icon(Icons.arrow_drop_up_rounded),
+             icon: Icon("/assets"),
+            label: ' ',),
+
+
+            BottomNavigationBarItem(
+              icon: Icon(Icons.ac_unit,
+                  color: Colors.white30
+              ),
+              label: ' ',
+            ),
+
+
+
+
+    ],
+
+
+       ),);
 
   }
 }
