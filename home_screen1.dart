@@ -275,8 +275,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
            ),
            BottomNavigationBarItem(
-            // icon: Icon(Icons.arrow_drop_up_rounded),
-             icon: Icon("/assets"),
+
+            icon: Icon(Icons.home,size: 50,),
+            //  icon: Icon("/assets"),
             label: ' ',),
 
 
