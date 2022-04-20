@@ -107,6 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
                       Column( children:<Widget>[
+                        
 
                         Container(child:Align(alignment: Alignment.topRight,
                               child:Text("Settings",style: TextStyle(fontSize: 18,color: Colors.white,),
@@ -227,20 +228,28 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),),
                                 ),),
 
-
-
-
                           ],
 
-                          
-
                         ),
-
-
-
-
                       ),
+                      Container(
+                        height: 63.5,
+                        width: 83.5,
+
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),)
+                      ),
+                      Container(
+                          height: 6.5,
+                          width: 964,
+
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            )
+                      )
                     ],
+
 
 
 
@@ -256,45 +265,45 @@ class _HomeScreenState extends State<HomeScreen> {
     ),),
 
 
-       bottomNavigationBar:
+    //    bottomNavigationBar:
+    //
+    //
+    //    BottomNavigationBar(
+    //
+    //
+    //
+    //       items: const <BottomNavigationBarItem>[
+    //
+    //        BottomNavigationBarItem(
+    //
+    //          icon: Icon(Icons.ac_unit,
+    //          color: Colors.white30
+    //        ),
+    //         label: '',
+    //
+    //
+    //        ),
+    //        BottomNavigationBarItem(
+    //
+    //         icon: Icon(Icons.format_shapes_rounded,size: 40, color:Colors.white30),
+    //         //  icon: Icon("/assets"),
+    //         label: ' ',),
+    //
+    //
+    //         BottomNavigationBarItem(
+    //           icon: Icon(Icons.ac_unit,
+    //               color: Colors.white30
+    //           ),
+    //           label: ' ',
+    //         ),
+    //
+    //
+    //
+    //
+    // ],),
 
 
-       BottomNavigationBar(
-
-
-
-          items: const <BottomNavigationBarItem>[
-
-           BottomNavigationBarItem(
-
-             icon: Icon(Icons.ac_unit,
-             color: Colors.white30
-           ),
-            label: '',
-
-
-           ),
-           BottomNavigationBarItem(
-
-            icon: Icon(Icons.home,size: 50,),
-            //  icon: Icon("/assets"),
-            label: ' ',),
-
-
-            BottomNavigationBarItem(
-              icon: Icon(Icons.ac_unit,
-                  color: Colors.white30
-              ),
-              label: ' ',
-            ),
-
-
-
-
-    ],
-
-
-       ),);
+       );
 
   }
 }
